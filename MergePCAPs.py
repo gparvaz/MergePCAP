@@ -23,7 +23,7 @@ x = filebrowser()
 
 firsrpcap=open(x[0],'rb')
 firstpcapdata = firsrpcap.read()
-fsize=os.path.getsize('D:\\Python\\Programm\\1\\First.pcap')
+fsize=os.path.getsize(x[0])
 firsrpcap.close()
 xs = bytearray(firstpcapdata)
 firstfiledatalink=firstpcapdata[20]
